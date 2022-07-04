@@ -6,6 +6,8 @@ on:
       - main  # Set a branch to deploy
     #branches: [ "main" ]
   pull_request:
+    branches:
+      - main
     #branches: [ "main" ]
     
   # Allows you to run this workflow manually from the Actions tab
@@ -14,7 +16,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
         with:
@@ -24,15 +26,16 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest'
-          # extended: true
+            hugo-version: "latest"
+            extended: true
 
       - name: Build
-        run: hugo --minify
+        run: hugo --minify --gc
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+            branch: gh-pages
+            folder: public
+            clean: true
+            single-commit: true
