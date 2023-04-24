@@ -1,0 +1,133 @@
+baseurl: https://www.alvaroeds.com/
+languageCode: en-us
+theme: hugo-theme-stack
+paginate: 5
+title: Alvaro Enrique
+#googleAnalytics: G-5MWBLGBBDE
+googleAnalytics: G-L8CTF47XK7
+
+permalinks:
+    post: /p/:slug/
+    page: /:slug/
+
+params:
+    mainSections:
+        - post
+    featuredImageField: image
+    rssFullContent: true
+    favicon: https://avatars.githubusercontent.com/u/41646326?v=4
+
+    footer:
+        #since: 2022
+        customText: Con ❤ desde Latam
+
+    dateFormat:
+        published: Jan 02, 2006
+        lastUpdated: Jan 02, 2006 15:04 MST
+
+    sidebar:
+        emoji: 🦦
+        subtitle: Escribo código, compro ₿itcoin y duermo a diario.
+        avatar:
+            enabled: true
+            local: false
+            src: https://avatars.githubusercontent.com/u/41646326?v=4
+
+    article:
+        math: false
+        toc: true
+        readingTime: true
+        license:
+            enabled: false
+            default: Licensed under CC BY-NC-SA 4.0
+
+    comments:
+        enabled: false
+
+    widgets:
+        homepage:
+            - type: search
+            - type: archives
+              params:
+                  limit: 2
+            - type: categories
+              params:
+                  limit: 10
+            - type: tag-cloud
+              params:
+                  limit: 10
+        page:
+            - type: toc
+
+    opengraph:
+        twitter:
+            site: https://twitter.com/alvaroeds
+            card: summary_large_image
+
+    defaultImage:
+        opengraph:
+            enabled: false
+            local: false
+            src:
+
+    colorScheme:
+        toggle: true
+        default: dark
+    
+    imageProcessing:
+        cover:
+            enabled: true
+        content:
+            enabled: true
+
+menu:
+    main:
+        - identifier: home
+          name: Home
+          url: /
+          weight: -100
+          params:
+            icon: home
+            #newTab: true
+
+    social:
+        - identifier: github
+          name: GitHub
+          url: https://github.com/alvaroeds
+          params:
+              icon: brand-github
+
+        - identifier: twitter
+          name: Twitter
+          url: https://twitter.com/alvaroeds
+          params:
+              icon: brand-twitter
+
+related:
+    includeNewer: true
+    threshold: 60
+    toLower: false
+    indices:
+        - name: tags
+          weight: 100
+
+        - name: categories
+          weight: 200
+
+markup:
+    goldmark:
+        renderer:
+            ## Set to true if you have HTML content inside Markdown
+            unsafe: true
+    tableOfContents:
+        endLevel: 4
+        ordered: true
+        startLevel: 2
+    highlight:
+        noClasses: false
+        codeFences: true
+        guessSyntax: true
+        lineNoStart: 1
+        lineNos: true
+        lineNumbersInTable: true
+        tabWidth: 4
