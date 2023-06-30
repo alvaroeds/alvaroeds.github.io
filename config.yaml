@@ -15,24 +15,25 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon: https://avatars.githubusercontent.com/u/41646326?v=4
+    favicon: /favicon.ico
 
     footer:
-        #since: 2022
-        customText: Con ❤ desde Latam
+        since: 2023
+        customText: Con 💙 desde Latam
 
     dateFormat:
         published: Jan 02, 2006
-        lastUpdated: Jan 02, 2006 15:04 MST
+        lastUpdated: Jan 02, 2006
 
     sidebar:
         emoji: 🦦
-        subtitle: Escribo código, compro ₿itcoin y duermo a diario.
+        subtitle: Ingeniero de Software, emprendedor tech.
+        compact: false
         avatar:
             enabled: true
-            local: false
-            src: https://avatars.githubusercontent.com/u/41646326?v=4
-
+            local: true
+            src: /img/photo.png
+            
     article:
         math: false
         toc: true
@@ -43,6 +44,7 @@ params:
 
     comments:
         enabled: false
+        #provider: cusdis
 
     widgets:
         homepage:
@@ -83,7 +85,7 @@ params:
 menu:
     main:
         - identifier: home
-          name: Home
+          name: Inicio
           url: /
           weight: -100
           params:
@@ -91,17 +93,30 @@ menu:
             #newTab: true
 
     social:
+        - identifier: twitter
+          name: Twitter
+          url: https://twitter.com/alvaroeds
+          params:
+              icon: brand-twitter
+
         - identifier: github
           name: GitHub
           url: https://github.com/alvaroeds
           params:
               icon: brand-github
 
-        - identifier: twitter
-          name: Twitter
-          url: https://twitter.com/alvaroeds
+        - identifier: instagram
+          name: Instagram
+          url: https://instagram.com/alvaro.eds
           params:
-              icon: brand-twitter
+              icon: brand-instagram
+
+        - identifier: linkedin
+          name: Linkedin
+          url: https://linkedin.com/in/alvaroeds/
+          params:
+              icon: brand-linkedin
+        
 
 related:
     includeNewer: true

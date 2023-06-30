@@ -14,4 +14,4 @@ Hola mundo!
 <br>
 Pronto más noticias
 
-<blockquote class='twitter-tweet'><p lang='es' dir='ltr'>&quot;Everything Everywhere All at Once&quot; es una experiencia cinematográfica increíble 👁️</p>&mdash; Alvaro Enrique 🦦 (@alvaroeds) <a href='https://twitter.com/alvaroeds/status/1542014884073840640?ref_src=twsrc%5Etfw'>June 29, 2022</a></blockquote> <script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script>
+<blockquote class="twitter-tweet"><p lang="es" dir="ltr">si viajas toma el viaje completo</p>&mdash; Alvaro Enrique 🦦 (@alvaroeds) <a href="https://twitter.com/alvaroeds/status/1347723585197109248?ref_src=twsrc%5Etfw">January 9, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
